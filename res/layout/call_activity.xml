@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:id="@+id/txtv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LV"
+        android:textSize="21dp"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/txtv1"
+        android:layout_marginLeft="30dp"
+        />
+    <TextView
+        android:id="@+id/txtv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="21dp"
+        android:layout_toRightOf="@id/txtv2"
+        />
+    <TextView
+        android:id="@+id/txtv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="金钱"
+        android:textColor="#000000"
+        android:textSize="21dp"
+        android:layout_toRightOf="@id/txtv3"
+        android:layout_marginLeft="30dp"
+        />
+    <TextView
+        android:id="@+id/txtv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="21dp"
+        android:layout_toRightOf="@id/txtv4"
+        />
+
+    <ImageView
+        android:id="@+id/txtv_call_big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtv1"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="90dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="召唤"
+        android:textSize="20sp"
+        android:background="#cf4689"
+        android:layout_below="@id/txtv_call_big"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="130dp"
+        />
+
+    <TextView
+        android:id="@+id/txtv_call_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="花费"
+        android:textSize="15dp"
+        android:layout_below="@id/txtv_call_big"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="240dp"
+        />
+
+    <TextView
+        android:id="@+id/txtv_call_costc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500"
+        android:textSize="15dp"
+        android:layout_below="@id/txtv_call_big"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="270dp"
+        />
+
+
+</RelativeLayout>

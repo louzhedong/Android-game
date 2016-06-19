@@ -1,0 +1,219 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:id="@+id/txtv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LV"
+        android:textColor="#000000"
+        android:textSize="21dp"
+        android:layout_toRightOf="@id/txtv1"
+        android:layout_marginLeft="30dp"
+        />
+    <TextView
+        android:id="@+id/txtv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="21dp"
+        android:layout_toRightOf="@id/txtv2"
+        />
+    <TextView
+        android:id="@+id/txtv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="金钱"
+        android:textSize="21dp"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/txtv3"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:id="@+id/txtv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="21dp"
+        android:layout_toRightOf="@id/txtv4"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:background="#AA444444"
+        android:layout_below="@id/txtv1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/id_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/txtv_hero_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="张无忌"
+        android:textSize="20dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@id/txtv1"
+        />
+
+    <TextView
+        android:id="@+id/txtv_hero_lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lv"
+        android:textSize="20dp"
+        android:layout_marginTop="115dp"
+        android:layout_toRightOf="@id/txtv_hero_name"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/txtv1"
+        />
+
+    <TextView
+        android:id="@+id/txtv_hero_lvc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textSize="20dp"
+        android:layout_marginTop="115dp"
+        android:layout_toRightOf="@id/txtv_hero_lv"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/txtv1"
+        />
+
+    <ImageButton
+        android:id="@+id/txtv_hero_big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/big"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/txtv1"
+        />
+
+    <ImageButton
+        android:id="@+id/txtv_hero_skill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/small"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/txtv1"
+        android:layout_toRightOf="@id/txtv_hero_big"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_hero_attack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/small"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/txtv_hero_skill"
+        android:layout_toRightOf="@id/txtv_hero_big"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_hero_protect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/small"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/btn_hero_attack"
+        android:layout_toRightOf="@id/txtv_hero_big"
+        />
+
+    <TextView
+        android:id="@+id/txtv_hero_hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="血量"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@id/txtv_hero_big"
+        />
+
+    <TextView
+        android:id="@+id/txtv_hero_hpc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2000"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/txtv_hero_big"
+        android:layout_toRightOf="@id/txtv_hero_hp"
+        />
+
+    <TextView
+        android:id="@+id/txtv_hero_gong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="攻击力"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@id/txtv_hero_big"
+        android:layout_toRightOf="@id/txtv_hero_hpc"
+        />
+
+    <TextView
+        android:id="@+id/txtv_hero_gongc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2000"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/txtv_hero_big"
+        android:layout_toRightOf="@id/txtv_hero_gong"
+        />
+
+    <TextView
+        android:id="@+id/txtv_hero_fang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="防御力"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@id/txtv_hero_big"
+        android:layout_toRightOf="@id/txtv_hero_gongc"
+        />
+
+    <TextView
+        android:id="@+id/txtv_hero_fangc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2000"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/txtv_hero_big"
+        android:layout_toRightOf="@id/txtv_hero_fang"
+        />
+
+</RelativeLayout>

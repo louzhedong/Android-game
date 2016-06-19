@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sjc447245616.wulinshijie" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="武林世界"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="武林世界" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".HeroActivity"
+            android:label="英雄">
+            <intent-filter>
+                <action android:name="com.litreily.HeroActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CallActivity"
+            android:label="召唤">
+            <intent-filter>
+                <action android:name="com.litreily.CallActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".FightActivity"
+            android:label="战斗">
+            <intent-filter>
+                <action android:name="com.litreily.FightActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".PacketActivity"
+            android:label="背包">
+            <intent-filter>
+                <action android:name="com.litreily.PacketActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SetActivity"
+            android:label="设置">
+            <intent-filter>
+                <action android:name="com.litreily.SetActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".StoreActivity"
+            android:label="商店">
+            <intent-filter>
+                <action android:name="com.litreily.StoreActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MineActivity"
+            android:label="我的">
+            <intent-filter>
+                <action android:name="com.litreily.MineActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.example.sjc447245616.wulinshijie.MusicService" >
+            <intent-filter>
+                <action android:name="android.Music" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.example.sjc447245616.wulinshijie.BattleScene"
+            android:label="@string/title_activity_battle_scene" >
+        </activity>
+
+        <activity
+            android:name="com.example.sjc447245616.wulinshijie.GetHero"
+            android:label="@string/title_activity_get_hero" >
+        </activity>
+
+    </application>
+
+</manifest>
